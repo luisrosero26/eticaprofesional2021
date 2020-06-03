@@ -11,14 +11,14 @@ chunks:
     title: Semana 1 - Fundamentos de etica profesional
     title_next_flow: ''
   - flow_id: flow2
-    next_flow: null
+    next_flow: quiz3
     pages:
     - flow_id: page3
       title: Dia 1
     - flow_id: page4
       title: Dia 2
     title: Semana 2 - Aplicando fundamentos de etica al trabajo
-    title_next_flow: ''
+    title_next_flow: Continuar con el quiz
   id: welcome
   introduction: "Este es un curso de demostracion de etica profesional \r\n\r\n\xC9\
     tica profesional y trabajo. La \xE9tica profesional se refiere al conjunto de\
