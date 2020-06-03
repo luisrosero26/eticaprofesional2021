@@ -1,0 +1,42 @@
+completion_text: |-
+  Has finalizado el quiz de la primera semana, felicidades
+description: "Esto es un peque\xF1o quiz, para saber que tan inteligente eres"
+groups:
+- id: intro
+  pages:
+  - content: "#Quiz de la semana 1\nLa \xE9tica profesional se refiere al conjunto\
+      \ de normas o principios por los cuales debe regirse una persona en el \xE1\
+      mbito laboral. Este factor trata de abarcar los par\xE1metros y actividades\
+      \ que se realizan en las diferentes profesiones. Trata de establecer conciencia\
+      \ de responsabilidad en la ejecuci\xF3n de la profesi\xF3n, mediante los valores\
+      \ que tiene cada persona.</div>\n                        "
+    id: welcome
+    type: Page
+- id: quiz_start
+  pages: []
+  shuffle: false
+rules:
+  access:
+  - message: Welcome! This message is brought to you by the access rules.
+    permissions:
+    - view
+    - submit_answer
+    - end_session
+    - see_correctness
+    - see_answer_after_submission
+  grade_aggregation_strategy: use_latest
+  grade_identifier: quiz3
+  grading:
+  - credit_percent: 50
+  start:
+  - may_list_existing_sessions: true
+    may_start_new_session: true
+  - if_before: 2020-07-24 10:00:44
+    if_has_fewer_sessions_than: 2
+    if_has_role:
+    - student
+    - ta
+    - instructor
+    may_list_existing_sessions: true
+    may_start_new_session: true
+title: Quiz de la semana 1
