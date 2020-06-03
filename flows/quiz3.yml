@@ -31,7 +31,7 @@ rules:
   start:
   - may_list_existing_sessions: true
     may_start_new_session: true
-  - if_before: 2020-07-24 10:00:44
+  - if_before: 2020-07-15 10:00:44
     if_has_fewer_sessions_than: 2
     if_has_role:
     - student
