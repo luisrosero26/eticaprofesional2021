@@ -13,7 +13,29 @@ groups:
     id: welcome
     type: Page
 - id: quiz_start
-  pages: []
+  pages:
+  - choices:
+    - Algebra
+    - ~CORRECT~ Etica profesional
+    - Matematicas financieras
+    credit_mode: exact
+    id: quizquestion6
+    prompt: '#El curso que acabas de ver cual es?
+
+      None'
+    shuffle: false
+    type: MultipleChoiceQuestion
+    value: 5.0
+  - answers:
+    - rtol: 0.0
+      type: float
+      value: '3'
+    id: quizquestion5
+    prompt: '#Cuantos colores tiene la bandera de colombia?
+
+      None'
+    type: TextQuestion
+    value: 5.0
   shuffle: false
 rules:
   access:
