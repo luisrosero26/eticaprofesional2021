@@ -1,0 +1,29 @@
+chunks:
+- content: ''
+  flows:
+  - flow_id: flow1
+    next_flow: null
+    pages:
+    - flow_id: page1
+      title: Dia 1
+    - flow_id: page2
+      title: Dia 2
+    title: Semana 1 - Fundamentos de etica profesional
+    title_next_flow: ''
+  - flow_id: flow2
+    next_flow: null
+    pages:
+    - flow_id: page3
+      title: Dia 1
+    - flow_id: page4
+      title: Dia 2
+    title: Semana 2 - Aplicando fundamentos de etica al trabajo
+    title_next_flow: ''
+  id: welcome
+  introduction: "Este es un curso de demostracion de etica profesional \r\n\r\n\xC9\
+    tica profesional y trabajo. La \xE9tica profesional se refiere al conjunto de\
+    \ normas o principios por los cuales debe regirse una persona en el \xE1mbito\
+    \ laboral. Este factor trata de abarcar los par\xE1metros y actividades que se\
+    \ realizan en las diferentes profesiones"
+  rules: []
+  title: Etica profesional
