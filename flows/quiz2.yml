@@ -68,14 +68,12 @@ rules:
   grading:
   - credit_percent: 100
   start:
-  - if_before: 2020-06-12 16:19:46
-    if_has_fewer_sessions_than: 8
+  - if_before: 2020-07-10 16:19:46
+    if_has_fewer_sessions_than: 2
     if_has_role:
     - student
     - ta
     - instructor
     may_list_existing_sessions: true
-    may_start_new_session: true
-  - may_list_existing_sessions: true
     may_start_new_session: true
 title: Semana1 - Quiz de las bases
