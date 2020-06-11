@@ -14,18 +14,6 @@ groups:
     type: Page
 - id: quiz_start
   pages:
-  - choices:
-    - Algebra
-    - ~CORRECT~ Etica profesional
-    - Matematicas financieras
-    credit_mode: exact
-    id: quizquestion6
-    prompt: '#El curso que acabas de ver cual es?
-
-      None'
-    shuffle: false
-    type: MultipleChoiceQuestion
-    value: 5.0
   - answers:
     - rtol: 0.0
       type: float
@@ -35,6 +23,18 @@ groups:
 
       None'
     type: TextQuestion
+    value: 5.0
+  - choices:
+    - Matematicas financieras
+    - ~CORRECT~ Etica profesional
+    - Algebra
+    credit_mode: exact
+    id: quizquestion6
+    prompt: '#El curso que acabas de ver cual es?
+
+      None'
+    shuffle: false
+    type: MultipleChoiceQuestion
     value: 5.0
   shuffle: false
 rules:
