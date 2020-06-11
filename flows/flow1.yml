@@ -4,13 +4,16 @@ completion_text: |-
 description: |-
   Semana 1 - Etica profesional bases
 pages:
-- content: "#Day 1\n<div class=\"lead\">empezar por algo antes de que termin</div>\n\
-    \                "
-  id: page8
-  type: Page
 - content: "#Day 2\n<div class=\"lead\">Segundo dia aburrido de clases</div>\n   \
     \             "
   id: page9
+  type: Page
+- content: "#Day 1\n<div class=\"lead\"><p>empezar por algo antes de que terminos</p><p><br></p><p><br></p><p><span\
+    \ class=\"fr-video fr-deletable fr-fvc fr-dvb fr-draggable\" contenteditable=\"\
+    false\" draggable=\"true\"><iframe width=\"640\" height=\"360\" src=\"https://www.youtube.com/embed/kZ3S4WcPcCY?&wmode=opaque\"\
+    \ frameborder=\"0\" allowfullscreen=\"\" class=\"fr-draggable\"></iframe></span><br></p></div>\n\
+    \                "
+  id: page8
   type: Page
 rules:
   access:
