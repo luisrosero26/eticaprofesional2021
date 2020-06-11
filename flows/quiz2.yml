@@ -1,0 +1,81 @@
+completion_text: |-
+  Haz terminado el quiz, continuar con tu proxima semana
+description: "Es un peque\xF1o quiz para evaluar lo aprendido en la semana 1"
+groups:
+- id: intro
+  pages:
+  - content: "#Semana1 - Quiz de las bases\nBienvenido al primer quiz, \r\n\r\nNo\
+      \ tengas miedo te va ir bien</div>\n                        "
+    id: welcome
+    type: Page
+- id: quiz_start
+  pages:
+  - choices:
+    - ~CORRECT~ Opcion1
+    - ~CORRECT~ Opcion 2
+    - Opcion3
+    credit_mode: exact
+    id: quizquestion7
+    prompt: '#PReugnta multiple
+
+      None'
+    shuffle: false
+    type: MultipleChoiceQuestion
+    value: 5.0
+  - choices:
+    - ~CORRECT~ isabel 2
+    - Simon bolivar
+    id: quizquestion4
+    prompt: "#Quien es la reina de espa\xF1a?\nNone"
+    type: ChoiceQuestion
+    value: 5.0
+  - answers:
+    - rtol: 0.0
+      type: float
+      value: '23'
+    id: quizquestion1
+    prompt: '#Cuanto es 4+4?
+
+      None'
+    type: TextQuestion
+    value: 5.0
+  - choices:
+    - ~CORRECT~ Azul
+    - ~CORRECT~ Amarillo
+    - ~CORRECT~ Rojo
+    - Moradp
+    - Gris
+    credit_mode: exact
+    id: quizquestion6
+    prompt: '#Selecciones los colores de colombia
+
+      None'
+    shuffle: false
+    type: MultipleChoiceQuestion
+    value: 5.0
+  shuffle: true
+rules:
+  access:
+  - message: Welcome! This message is brought to you by the access rules.
+    permissions:
+    - view
+    - submit_answer
+    - end_session
+    - see_correctness
+    - see_answer_after_submission
+  grade_aggregation_strategy: use_latest
+  grade_identifier: quiz2
+  grading:
+  - credit_percent: 100
+  start:
+  - if_before: 2020-06-11 12:14:47
+    if_has_fewer_sessions_than: 2
+    if_has_role:
+    - student
+    - ta
+    - instructor
+    may_list_existing_sessions: true
+    may_start_new_session: true
+  - may_list_existing_sessions: true
+    may_start_new_session: true
+title: Semana1 - Quiz de las bases
