@@ -18,10 +18,10 @@ chunks:
   - flow_id: flow1
     next_flow: quiz2
     pages:
-    - flow_id: page8
-      title: Day 1
     - flow_id: page9
       title: Day 2
+    - flow_id: page8
+      title: Day 1
     title: Semana 1
     title_next_flow: Ir al quiz
   id: welcome
