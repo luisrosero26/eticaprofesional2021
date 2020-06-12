@@ -4,13 +4,13 @@ description: "Esto es un peque\xF1o quiz, para saber que tan inteligente eres"
 groups:
 - id: intro
   pages:
-  - content: "#Quiz de la semana 1\nLa \xE9tica profesional se refiere al conjunto\
-      \ de normas o principios por los cuales debe regirse una persona en el \xE1\
-      mbito laboral. Este factor trata de abarcar los par\xE1metros y actividades\
-      \ que se realizan en las diferentes profesiones. Trata de establecer conciencia\
-      \ de responsabilidad en la ejecuci\xF3n de la profesi\xF3n, mediante los valores\
-      \ que tiene cada persona.</div>\n                        "
+  - content: "La \xE9tica profesional se refiere al conjunto de normas o principios\
+      \ por los cuales debe regirse una persona en el \xE1mbito laboral. Este factor\
+      \ trata de abarcar los par\xE1metros y actividades que se realizan en las diferentes\
+      \ profesiones. Trata de establecer conciencia de responsabilidad en la ejecuci\xF3\
+      n de la profesi\xF3n, mediante los valores que tiene cada persona. "
     id: welcome
+    title: Quiz de la semana 1
     type: Page
 - id: quiz_start
   pages:
@@ -19,9 +19,8 @@ groups:
       type: float
       value: '3'
     id: quizquestion5
-    prompt: '#Cuantos colores tiene la bandera de colombia?
-
-      None'
+    prompt: ''
+    title: Cuantos colores tiene la bandera de colombia?
     type: TextQuestion
     value: 5.0
   - choices:
@@ -30,16 +29,16 @@ groups:
     - Algebra
     credit_mode: exact
     id: quizquestion6
-    prompt: '#El curso que acabas de ver cual es?
-
-      None'
+    prompt: ''
     shuffle: false
+    title: El curso que acabas de ver cual es?
     type: MultipleChoiceQuestion
     value: 5.0
   shuffle: false
 rules:
   access:
-  - message: Welcome! This message is brought to you by the access rules.
+  - message: "\xA1Bienvenidos! Este mensaje es tra\xEDdo a usted por las reglas de\
+      \ acceso"
     permissions:
     - view
     - submit_answer
